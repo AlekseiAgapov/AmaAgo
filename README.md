@@ -1,5 +1,5 @@
 # AmAgo
-This repository contains a code used for data analysis in a scientific paper ...
+This repository contains a code used for data analysis in a scientific paper "Prokaryotic Argonaute nuclease cooperates with co-encoded RNase to acquire guide RNAs and target invader DNA".
 
 ## What is this project for?
 This is the code that was used for NGS analysis published in paper ...
