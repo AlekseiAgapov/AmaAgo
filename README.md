@@ -3,7 +3,7 @@ This repository contains a code used for data analysis in a scientific paper ...
 
 ## What is this project for?
 This is the code that was used for NGS analysis published in paper ...
-1. We cleaved total RNA from *E. coli* cells with a novel RNAse Agap and sequenced 5'-unphosphorylated cleavage products on Illumina platform. This directory contains scripts that process 6 NGS libraries, align the reads to the reference DNA and make a sequence Logo of Agap cleavage site.
+1. We cleaved total RNA from *E. coli* cells with a novel RNase Agap and sequenced 5'-unphosphorylated cleavage products on Illumina platform. This directory contains scripts that process 6 NGS libraries, align the reads to the reference DNA and make a sequence Logo of Agap cleavage site.
 2. We analysed small DNA and RNA associated with dAmAgo in *E. coli* cells. This directory contains scripts that process 3 NGS libraries: small RNAs, small DNAs and publicly available RNA seq data.
 
 ## 1. Agap cleavage site
