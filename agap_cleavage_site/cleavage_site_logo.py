@@ -41,16 +41,16 @@ def load_alignment(path_to_directory):
     return df
 
 # Load alignment data from 6 libraries into DataFrames
-control_1 = load_alignment('./reads/control_1/')
-control_2 = load_alignment('./reads/control_2/')
-agap_1 = load_alignment('./reads/AgAP_1/')
-agap_2 = load_alignment('./reads/AgAP_2/')
-agap_3 = load_alignment('./reads/AgAP_3/')
-agap_ago_1 = load_alignment('./reads/AgAP_Ago_1/')
+control_1 = load_alignment('./reads/control_1/') # Specify a path to the data
+control_2 = load_alignment('./reads/control_2/') # Specify a path to the data
+agap_1 = load_alignment('./reads/AgAP_1/') # Specify a path to the data
+agap_2 = load_alignment('./reads/AgAP_2/') # Specify a path to the data
+agap_3 = load_alignment('./reads/AgAP_3/') # Specify a path to the data
+agap_ago_1 = load_alignment('./reads/AgAP_Ago_1/') # Specify a path to the data
 
 
 # Read the genome file as a pandas DataFrame
-genome_df = pd.read_csv('./BL21_genome/BL21.fa', sep='\t')
+genome_df = pd.read_csv('./BL21_genome/BL21.fa', sep='\t') # Specify a path to the data
 
 # Rename the column to 'fasta'
 genome_df.columns = ['fasta']

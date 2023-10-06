@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 from scipy.stats import spearmanr
 
 # Read TSV files into a pandas DataFrame
-rna_nt = pd.read_csv('../dago_agap_rna/alignment/nt_genes_coverage.tsv', sep='\t', header=None)
+rna_nt = pd.read_csv('../dago_agap_rna/alignment/nt_genes_coverage.tsv', sep='\t', header=None) # Specify a path to the data
 rna_nt.columns = ['chromosome', 'source', 'feature', 'start', 'end', 'score', 'strand', 'frame', 'attribute', 'rna_nt']
 rna_nt['gene_name'] = rna_nt['attribute'].str.extract('Name=([^;]+)')
 rna_nt['gene_biotype'] = rna_nt['attribute'].str.extract('gene_biotype=([^;]+)')
 
-rna_seq = pd.read_csv('../rna_seq/alignment/genes_coverage.tsv', sep='\t', header=None)
+rna_seq = pd.read_csv('../rna_seq/alignment/genes_coverage.tsv', sep='\t', header=None) # Specify a path to the data
 rna_seq.columns = ['chromosome', 'source', 'feature', 'start', 'end', 'score', 'strand', 'frame', 'attribute', 'rna_seq']
 
 
@@ -22,10 +22,10 @@ df['rna_seq'] = rna_seq['rna_seq']
 
 
 # Load the number of reads
-with open('../dago_agap_rna/alignment/n_reads_genome.txt', 'r') as f:
+with open('../dago_agap_rna/alignment/n_reads_genome.txt', 'r') as f: # Specify a path to the data
     n_reads_rna = int(f.read().strip())
 
-with open('../rna_seq/alignment/n_reads_genome.txt', 'r') as f:
+with open('../rna_seq/alignment/n_reads_genome.txt', 'r') as f: # Specify a path to the data
     n_reads_rna_seq = int(f.read().strip())
 
 
