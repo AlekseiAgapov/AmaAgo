@@ -1,4 +1,4 @@
-# AmaAgo
+# AmAgo
 This repository contains a code used for data analysis in a scientific paper ...
 
 ## What is this project for?
